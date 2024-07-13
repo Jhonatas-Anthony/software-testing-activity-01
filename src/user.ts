@@ -1,3 +1,5 @@
+import { sendEmail } from "./email-service";
+
 interface User {
   name: string;
   email: string;
@@ -49,6 +51,7 @@ function registerUser(user: User): Return {
     }
   }
   users.push(user);
+  sendEmail(user.email, 'Bem-vindo ao sistema!');
   return {
     status: 'success',
     message: 'Usuário cadastrado com sucesso.',
