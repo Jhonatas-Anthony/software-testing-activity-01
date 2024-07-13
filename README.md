@@ -52,8 +52,17 @@ Resultados Esperados:
 
 Para rodar os testes: 
 
+1. Baixe as dependências se for a primeira vez que está rodando o projeto: 
 ``` javascript
 npm install
-npm run test
+```
 
+2. Rode os testes:
+``` javascript
+npm run test
+```
+
+3. Verifique a cobertura de código:
+``` javascript
+npm run coverage
 ```
